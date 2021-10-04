@@ -15,16 +15,13 @@ public class Inventory : MonoBehaviour
     
     public bool Add(Item item)
     {
-        if (inventory.Count <= inventoryCapacity)
-        {
             inventory.Add(item);
             return true;
-        }
-        else
+        /*else
         {
             Debug.Log("No more inventory space");
             return false;
-        }
+        }*/
     }
 
     public void Remove(Item item)
